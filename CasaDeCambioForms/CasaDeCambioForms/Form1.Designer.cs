@@ -57,18 +57,11 @@
             this.adicionarModificarValroDeConversãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.moeda_nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.real = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dolar = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.euro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // MoedaOrigemCbx
@@ -280,10 +273,6 @@
             this.splitContainer1.Panel1.Controls.Add(this.label3);
             this.splitContainer1.Panel1.Controls.Add(this.ValorConvertidoTxb);
             this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
-            // 
-            // splitContainer1.Panel2
-            // 
-            this.splitContainer1.Panel2.Controls.Add(this.dataGridView1);
             this.splitContainer1.Size = new System.Drawing.Size(987, 383);
             this.splitContainer1.SplitterDistance = 355;
             this.splitContainer1.TabIndex = 20;
@@ -336,40 +325,6 @@
             this.fileSystemWatcher1.EnableRaisingEvents = true;
             this.fileSystemWatcher1.SynchronizingObject = this;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.moeda_nome,
-            this.real,
-            this.dolar,
-            this.euro});
-            this.dataGridView1.Location = new System.Drawing.Point(31, 22);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(444, 162);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // moeda_nome
-            // 
-            this.moeda_nome.HeaderText = "Nome da Moeda";
-            this.moeda_nome.Name = "moeda_nome";
-            // 
-            // real
-            // 
-            this.real.HeaderText = "Real";
-            this.real.Name = "real";
-            // 
-            // dolar
-            // 
-            this.dolar.HeaderText = "Dolar";
-            this.dolar.Name = "dolar";
-            // 
-            // euro
-            // 
-            this.euro.HeaderText = "Euro";
-            this.euro.Name = "euro";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -383,13 +338,11 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
-            this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -425,11 +378,6 @@
         private System.Windows.Forms.ToolStripMenuItem adicionarModificarValroDeConversãoToolStripMenuItem;
         private System.Windows.Forms.Timer timer1;
         private System.IO.FileSystemWatcher fileSystemWatcher1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn moeda_nome;
-        private System.Windows.Forms.DataGridViewTextBoxColumn real;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dolar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn euro;
     }
 }
 
