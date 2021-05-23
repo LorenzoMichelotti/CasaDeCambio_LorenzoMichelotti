@@ -231,8 +231,9 @@ namespace CasaDeCambioForms
 
         }
 
+        //SALVAR
         public string relatorio_txt = "";
-        public void salvarRelatorio()
+        public async Task salvarRelatorio()
         {
             string _nome = NomeClienteTxb.Text;
             string _datahora = DataOpTxb.Text;
@@ -241,17 +242,15 @@ namespace CasaDeCambioForms
             string _valorConvertido = ValorConvertidoTxb.Text;
 
             string insert = "\r\nnome: " + _nome + ", data: " + _datahora + " valor+taxa: " + _valorConverter + " (taxa = " + _valorTaxa + "), valor convertido: " + _valorConvertido + "\r\n";
+            
             relatorio_txt += insert;
             relatorios relatorioJanela = new relatorios();
             relatorioJanela.Show();
             relatorioJanela.relatorioTx.Text = relatorio_txt;
-            SalvarArquivoAsync(relatorio_txt);
-        }
 
-        public static async Task SalvarArquivoAsync(string texto)
-        {
-            StreamWriter file = new StreamWriter("RelatoriodeCambio.txt", append: true);
-            await file.WriteLineAsync(texto);
+            //nao ta funcionando :^(
+            StreamWriter file = new StreamWriter("RelatoriodeCambio.txt", true);
+            await Task.Run(() => file.WriteLineAsync(relatorio_txt));
         }
     }
 }
