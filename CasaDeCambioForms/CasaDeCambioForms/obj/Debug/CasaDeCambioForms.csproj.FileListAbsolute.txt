@@ -1,0 +1,11 @@
+F:\Users\Pichau\Documents\GitHub\CasaDeCambio_LorenzoMichelotti\CasaDeCambioForms\CasaDeCambioForms\bin\Debug\CasaDeCambioForms.exe.config
+F:\Users\Pichau\Documents\GitHub\CasaDeCambio_LorenzoMichelotti\CasaDeCambioForms\CasaDeCambioForms\bin\Debug\CasaDeCambioForms.exe
+F:\Users\Pichau\Documents\GitHub\CasaDeCambio_LorenzoMichelotti\CasaDeCambioForms\CasaDeCambioForms\bin\Debug\CasaDeCambioForms.pdb
+F:\Users\Pichau\Documents\GitHub\CasaDeCambio_LorenzoMichelotti\CasaDeCambioForms\CasaDeCambioForms\obj\Debug\CasaDeCambioForms.csprojAssemblyReference.cache
+F:\Users\Pichau\Documents\GitHub\CasaDeCambio_LorenzoMichelotti\CasaDeCambioForms\CasaDeCambioForms\obj\Debug\CasaDeCambioForms.Form1.resources
+F:\Users\Pichau\Documents\GitHub\CasaDeCambio_LorenzoMichelotti\CasaDeCambioForms\CasaDeCambioForms\obj\Debug\CasaDeCambioForms.Properties.Resources.resources
+F:\Users\Pichau\Documents\GitHub\CasaDeCambio_LorenzoMichelotti\CasaDeCambioForms\CasaDeCambioForms\obj\Debug\CasaDeCambioForms.csproj.GenerateResource.cache
+F:\Users\Pichau\Documents\GitHub\CasaDeCambio_LorenzoMichelotti\CasaDeCambioForms\CasaDeCambioForms\obj\Debug\CasaDeCambioForms.csproj.CoreCompileInputs.cache
+F:\Users\Pichau\Documents\GitHub\CasaDeCambio_LorenzoMichelotti\CasaDeCambioForms\CasaDeCambioForms\obj\Debug\CasaDeCambioForms.exe
+F:\Users\Pichau\Documents\GitHub\CasaDeCambio_LorenzoMichelotti\CasaDeCambioForms\CasaDeCambioForms\obj\Debug\CasaDeCambioForms.pdb
+F:\Users\Pichau\Documents\GitHub\CasaDeCambio_LorenzoMichelotti\CasaDeCambioForms\CasaDeCambioForms\obj\Debug\CasaDeCambioForms.Form2.resources
