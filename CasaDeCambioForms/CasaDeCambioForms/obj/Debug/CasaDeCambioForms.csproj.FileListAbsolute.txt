@@ -12,3 +12,7 @@ F:\Users\Pichau\Documents\GitHub\CasaDeCambio_LorenzoMichelotti\CasaDeCambioForm
 F:\Users\Pichau\Documents\GitHub\CasaDeCambio_LorenzoMichelotti\CasaDeCambioForms\CasaDeCambioForms\bin\Debug\Database2_log.ldf
 F:\Users\Pichau\Documents\GitHub\CasaDeCambio_LorenzoMichelotti\CasaDeCambioForms\CasaDeCambioForms\obj\Debug\CasaDeCambioForms.EditorDeConversão.resources
 F:\Users\Pichau\Documents\GitHub\CasaDeCambio_LorenzoMichelotti\CasaDeCambioForms\CasaDeCambioForms\obj\Debug\CasaDeCambioForms.relatorios.resources
+F:\Users\Pichau\Documents\GitHub\CasaDeCambio_LorenzoMichelotti\CasaDeCambioForms\CasaDeCambioForms\bin\Debug\CasaDeCambioForms.exe.manifest
+F:\Users\Pichau\Documents\GitHub\CasaDeCambio_LorenzoMichelotti\CasaDeCambioForms\CasaDeCambioForms\bin\Debug\CasaDeCambioForms.application
+F:\Users\Pichau\Documents\GitHub\CasaDeCambio_LorenzoMichelotti\CasaDeCambioForms\CasaDeCambioForms\obj\Debug\CasaDeCambioForms.exe.manifest
+F:\Users\Pichau\Documents\GitHub\CasaDeCambio_LorenzoMichelotti\CasaDeCambioForms\CasaDeCambioForms\obj\Debug\CasaDeCambioForms.application

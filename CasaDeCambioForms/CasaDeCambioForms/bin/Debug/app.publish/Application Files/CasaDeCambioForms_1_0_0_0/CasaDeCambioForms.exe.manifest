@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="CasaDeCambioForms.exe" version="1.0.0.0" publicKeyToken="85f3ef892f0cff73" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="CasaDeCambioForms" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="CasaDeCambioForms.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CasaDeCambioForms.exe" size="64496">
+      <assemblyIdentity name="CasaDeCambioForms" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>r5/4Z6fF8YfOEj5cE0xMmOkXYkK4q9VLzgsc7FfcGi4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="CasaDeCambioForms.exe.config" size="826">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>VA/jJjcFuRYKlI92WP6gScrzqUO1a1PbWxufYzb28TE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Database2.mdf" size="8388608" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ZIBppTkcu4f619MzTj394tl/z3eYfbrxQlQ2nhsOW4Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Database2_log.ldf" size="8388608" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7vwY/chsk29gPsPyau5fV1OOllBudvwNj+Of1tq512s=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-4IGK14V\Lorenzo" issuerKeyHash="ba4d04b04557f7c91da737e89918c79ce9773933" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>eIp7GZPacL1l6kxHnGlHM5UjuCzv8VjC3MwahAT4ePM=</DigestValue></Reference></SignedInfo><SignatureValue>D7DtkJmM2Xl0e9VycVxQr/iKEqeBKqGBgyw55mJbkO4lOiMkN+Jx+AkiW7XU8eYWOaQ3a7hrpeMXHlcHlJdMj5amfOOnfu2h3lgRtQnQNfK2RNj2gYo8y4qAj46PBUcTUy9ITZ/kRxy7EFEV4JjW8TOfnqJXzZeMAOjRs8EOqog=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>0MEBNd3cI9mJAh2ZWcE02dDyrNEYVXxxn3E0R8KHoJ0quaBaUE/rFUlsKrD7tHfhF+AFilYnsi3z5JXzUS7v2qUZupNgiY2XmHBmUXRP4HI63QHB8/yQmXq/GfZztUq/cEsXvHjyhdWi2Yt+WhfWJmgRWR9QIbx0dZ/Zs5kAa30=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="f378f804841accdcc258f1ef2cb823953347699c474cea65bd70da93197b8a78" Description="" Url=""><as:assemblyIdentity name="CasaDeCambioForms.exe" version="1.0.0.0" publicKeyToken="85f3ef892f0cff73" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-4IGK14V\Lorenzo</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>SshoHYh7BSkNsY8jcHX0W3U7DvHN2W0nXSqpYUx2Mqo=</DigestValue></Reference></SignedInfo><SignatureValue>bD35jmdlGpOcvAuzeLRAfBI5SjnSRCm3ly8Nrs6/UezcG45o2uodhssLqG+9ayzD+J9DujNX/zb2xl5F5SSp01eXeUBUNUO0m1ES4FNn5CwK1/ij/TWQfssRgfRSsRvacSs2bPcS7SKPQ0VJm5ECtDIbFSixrsGFlovnG2Rp4oo=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>0MEBNd3cI9mJAh2ZWcE02dDyrNEYVXxxn3E0R8KHoJ0quaBaUE/rFUlsKrD7tHfhF+AFilYnsi3z5JXzUS7v2qUZupNgiY2XmHBmUXRP4HI63QHB8/yQmXq/GfZztUq/cEsXvHjyhdWi2Yt+WhfWJmgRWR9QIbx0dZ/Zs5kAa30=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB9TCCAV6gAwIBAgIQEnTCMYH9s69JNpEUV2KM/DANBgkqhkiG9w0BAQsFADA5MTcwNQYDVQQDHi4ARABFAFMASwBUAE8AUAAtADQASQBHAEsAMQA0AFYAXABMAG8AcgBlAG4AegBvMB4XDTIxMDUyMzIzNTQzN1oXDTIyMDUyNDA1NTQzN1owOTE3MDUGA1UEAx4uAEQARQBTAEsAVABPAFAALQA0AEkARwBLADEANABWAFwATABvAHIAZQBuAHoAbzCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA0MEBNd3cI9mJAh2ZWcE02dDyrNEYVXxxn3E0R8KHoJ0quaBaUE/rFUlsKrD7tHfhF+AFilYnsi3z5JXzUS7v2qUZupNgiY2XmHBmUXRP4HI63QHB8/yQmXq/GfZztUq/cEsXvHjyhdWi2Yt+WhfWJmgRWR9QIbx0dZ/Zs5kAa30CAwEAATANBgkqhkiG9w0BAQsFAAOBgQBNKshEqR8qAFMUg6qo/9m3VyqzxEZY27aOdxfzJrLXrLw+CfUZ33ZBW7C45qRr779qef8d796/i0yKu3TK6uui7kSXZsJboB9nprfBEz7EVjQMGLEykr/TvN+aAnU1fuJdXtaoAxhDVYp46990wg6Ie0sGiWxr9leip64JchfBSQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
