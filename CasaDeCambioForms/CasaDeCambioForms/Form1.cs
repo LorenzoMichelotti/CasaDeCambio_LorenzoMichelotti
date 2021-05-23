@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.IO;
 
 namespace CasaDeCambioForms
 {
@@ -22,18 +24,60 @@ namespace CasaDeCambioForms
         public Form1()
         {
             InitializeComponent();
-            for (int i = 0; i < moedas.Count;i++)
+            for (int i = 0; i < moedas.Count; i++)
             {
                 MoedaOrigemCbx.Items.Add(moedas[i]);
                 MoedaDestinoCbx.Items.Add(moedas[i]);
             }
             MoedaOrigemCbx.SelectedIndex = 0;
             MoedaDestinoCbx.SelectedIndex = 1;
+
+            //GetInfoFromDataBase();
         }
 
-        private void label9_Click(object sender, EventArgs e)
+        public void GetInfoFromDataBase()
         {
+            SqlConnection con = new SqlConnection("Data Source=DESKTOP-4IGK14V\\SQLEXPRESS;Initial Catalog=CasaDeCambio;Integrated Security=True");
+            con.Open();
 
+            //get valor de rows na tabela
+            SqlCommand getrowcount = new SqlCommand("SELECT COUNT(*) FROM ConversaoMoedas", con);
+            Int32 count = (Int32)getrowcount.ExecuteScalar();
+
+            con.Close();
+            //NOME DAS MOEDAS
+            string allMoedaNomes = "";
+            for (int i = 1; i < count+1; i--)
+            {
+                con.Open();
+                SqlCommand getCollumn = new SqlCommand("SELECT nome_moeda from ConversaoMoedas where ID =@ID", con);
+                getCollumn.Parameters.AddWithValue("@NOME", i);
+                getCollumn.Parameters.AddWithValue("@ID", i);
+
+                SqlDataReader nameReader = getCollumn.ExecuteReader();
+                while (nameReader.Read())
+                {
+                    //testtxb.Text = nameReader.GetString(0);
+                    //Console.WriteLine("this is the current name of nome_moeda"+ nameReader.GetString(0));
+                    //string.Concat(allMoedaNomes, ", ", nameReader.GetString(i));
+                }
+                con.Close();
+            }
+            //testtxb.Text = allMoedaNomes;
+            con.Open();
+            SqlCommand cmd = new SqlCommand("SELECT REAL from ConversaoMoedas where ID =@ID", con);
+            cmd.Parameters.AddWithValue("@ID", 0);
+            SqlDataReader idReader = cmd.ExecuteReader();
+            //while(idReader.Read())
+            //{
+            //    //VALOR DA CONVERSAO
+            //    //testtxb.Text = (idReader.GetDouble(0)).ToString();
+            //    for (int i = 0; i<count;i++)
+            //    {
+
+            //    }
+            //}
+            con.Close();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -46,9 +90,11 @@ namespace CasaDeCambioForms
 
         }
 
+        //ABRIR TABELA DE CONVERSOES
         private void adicionarModificarValroDeConversãoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            EditorDeConversão form2 = new EditorDeConversão();
+            form2.Show();
         }
 
         float valor = 0;
@@ -56,10 +102,11 @@ namespace CasaDeCambioForms
         string moedaOrigem;
         string moedaDestino;
 
-        //CONVERTER MOEDA
+        //EXECUTAR CAMBIO DE MOEDA
         private void ConfirmarConversao(object sender, EventArgs e)
         {
             Converter();
+            salvarRelatorio();
         }
 
         public void Converter()
@@ -129,6 +176,8 @@ namespace CasaDeCambioForms
             if (ValorOriginalTxb.Text == null) { ValorOriginalTxb.Text = "0"; }
             if (valor > 1000000) { valor = 1000000; MessageBox.Show("Valor máximo de câmbio: 9.999.999"); }
 
+            if (!String.IsNullOrEmpty(ValorOriginalTxb.Text)) { ConfirmarBt.Enabled = true; }
+
             Converter();
         }
 
@@ -155,9 +204,10 @@ namespace CasaDeCambioForms
             {
                 nameNotEmpty = false;
                 ValorOriginalTxb.ReadOnly = true;
+                ConfirmarBt.Enabled = false;
             } else {
                 nameNotEmpty = true;
-                if (nameNotEmpty) { ValorOriginalTxb.ReadOnly = false; }
+                if (nameNotEmpty) { ValorOriginalTxb.ReadOnly = false; if (!String.IsNullOrEmpty(ValorOriginalTxb.Text)) { ConfirmarBt.Enabled = true; } }
             }
         }
 
@@ -171,9 +221,37 @@ namespace CasaDeCambioForms
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void conversaoMoedasBindingSource_CurrentChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void ShowRelatorios(object sender, EventArgs e)
+        {
+
+        }
+
+        public string relatorio_txt = "";
+        public void salvarRelatorio()
+        {
+            string _nome = NomeClienteTxb.Text;
+            string _datahora = DataOpTxb.Text;
+            string _valorConverter = ValorTaxadoTxb.Text;
+            string _valorTaxa = TaxaCobradaTxb.Text;
+            string _valorConvertido = ValorConvertidoTxb.Text;
+
+            string insert = "\r\nnome: " + _nome + ", data: " + _datahora + " valor+taxa: " + _valorConverter + " (taxa = " + _valorTaxa + "), valor convertido: " + _valorConvertido + "\r\n";
+            relatorio_txt += insert;
+            relatorios relatorioJanela = new relatorios();
+            relatorioJanela.Show();
+            relatorioJanela.relatorioTx.Text = relatorio_txt;
+            SalvarArquivoAsync(relatorio_txt);
+        }
+
+        public static async Task SalvarArquivoAsync(string texto)
+        {
+            StreamWriter file = new StreamWriter("RelatoriodeCambio.txt", append: true);
+            await file.WriteLineAsync(texto);
         }
     }
 }

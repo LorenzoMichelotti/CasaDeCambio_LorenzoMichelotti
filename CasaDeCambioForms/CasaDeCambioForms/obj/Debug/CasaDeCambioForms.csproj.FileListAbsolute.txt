@@ -8,4 +8,7 @@ F:\Users\Pichau\Documents\GitHub\CasaDeCambio_LorenzoMichelotti\CasaDeCambioForm
 F:\Users\Pichau\Documents\GitHub\CasaDeCambio_LorenzoMichelotti\CasaDeCambioForms\CasaDeCambioForms\obj\Debug\CasaDeCambioForms.csproj.CoreCompileInputs.cache
 F:\Users\Pichau\Documents\GitHub\CasaDeCambio_LorenzoMichelotti\CasaDeCambioForms\CasaDeCambioForms\obj\Debug\CasaDeCambioForms.exe
 F:\Users\Pichau\Documents\GitHub\CasaDeCambio_LorenzoMichelotti\CasaDeCambioForms\CasaDeCambioForms\obj\Debug\CasaDeCambioForms.pdb
-F:\Users\Pichau\Documents\GitHub\CasaDeCambio_LorenzoMichelotti\CasaDeCambioForms\CasaDeCambioForms\obj\Debug\CasaDeCambioForms.Form2.resources
+F:\Users\Pichau\Documents\GitHub\CasaDeCambio_LorenzoMichelotti\CasaDeCambioForms\CasaDeCambioForms\bin\Debug\Database2.mdf
+F:\Users\Pichau\Documents\GitHub\CasaDeCambio_LorenzoMichelotti\CasaDeCambioForms\CasaDeCambioForms\bin\Debug\Database2_log.ldf
+F:\Users\Pichau\Documents\GitHub\CasaDeCambio_LorenzoMichelotti\CasaDeCambioForms\CasaDeCambioForms\obj\Debug\CasaDeCambioForms.EditorDeConversão.resources
+F:\Users\Pichau\Documents\GitHub\CasaDeCambio_LorenzoMichelotti\CasaDeCambioForms\CasaDeCambioForms\obj\Debug\CasaDeCambioForms.relatorios.resources
